@@ -8,12 +8,13 @@ export const Container = styled.header`
   align-items: center;
   justify-content: center;
 
-  background-color: beige;
+  background-color: var(--darkerColor);
 
   h1 {
     margin: 0;
     padding: 15px;
 
+    font-weight: normal;
     font-size: 25px;
   }
 `
