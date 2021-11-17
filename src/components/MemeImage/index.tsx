@@ -5,7 +5,7 @@ import { createCanvas, loadImage } from 'canvas'
 import { Container } from './styles'
 import img from '../../assets/img.jpg'
 
-export const Meme: React.FC = () => {
+export const MemeImage: React.FC = () => {
   const [imgUrl, setImgUrl] = useState('')
 
   useEffect(() => {
