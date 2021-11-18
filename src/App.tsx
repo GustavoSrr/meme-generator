@@ -4,16 +4,16 @@ import { Header } from './components/Header'
 import { MemeImage } from './components/MemeImage'
 import { Input } from './components/Input'
 
-import { UrlProvider } from './contexts/url'
+import { MemeProvider } from './contexts/meme'
 
 export const App: React.FC = () => {
   return (
-    <UrlProvider>
+    <MemeProvider>
       <div className="App">
         <Header />
         <MemeImage />
         <Input />
       </div>
-    </UrlProvider>
+    </MemeProvider>
   )
 }
