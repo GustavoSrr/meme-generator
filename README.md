@@ -6,10 +6,10 @@
 
 ## 📃 Conteúdo
 
-  1. [Como funciona?](#-como-funciona?)
+  1. [Como funciona?](#-como-funciona)
   2. [Tecnologias](#-tecnologias)
   3. [Teste o projeto](#-teste-o-projeto)
-  3. [Instalação](#-quer-instalar)
+  3. [Instalação](#-instalação)
 
 ## 🤔 Como funciona?
 
