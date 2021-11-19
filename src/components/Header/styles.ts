@@ -16,5 +16,6 @@ export const Container = styled.header`
 
     font-weight: normal;
     font-size: 25px;
+    cursor: default;
   }
 `
