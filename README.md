@@ -1,4 +1,6 @@
-<h1>😂 Meme Generator</h1>
+<h1 align="center">😂 Meme Generator</h1>
+
+<img align="center" src="./assets/snapshot.png" draggable="false" />
 
 > Um gerador de memes personalizados feito com React e Canvas.
 
@@ -6,12 +8,13 @@
 
   1. [Como funciona?](#-como-funciona?)
   2. [Tecnologias](#-tecnologias)
+  3. [Teste o projeto](#-teste-o-projeto)
   3. [Instalação](#-quer-instalar)
 
 ## 🤔 Como funciona?
 
-  1. A url, o texto de cima e o de baixo, que são digitados nos inputs, são salvos em um State do React, que será acessado novamente por meio do context.
-  2. A imagem da url é carregada via Canvas e guardada junto com a url e os textos.
+  1. A url, o texto de cima e o de baixo, que são digitados nos inputs, além da cor selecionada na roda de cores, são salvos em um State do React, que será acessado novamente por meio do context.
+  2. A imagem da url é carregada via Canvas e guardada junto com a url, texto e cor.
   3. O meme aparece no dispositivo do usuário com ajuda de um Effect do React, que é disparado sempre que o objeto "meme" é alterado.
 
 ## 📡 Tecnologias
