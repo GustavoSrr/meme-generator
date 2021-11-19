@@ -8,7 +8,7 @@ export const Container = styled.div`
   justify-content: center;
 
   form {
-    width: 30%;
+    width: 100%;
 
     display: flex;
     flex-direction: column;
@@ -34,18 +34,6 @@ export const Container = styled.div`
     button {
       margin-top: 5px;
     }
-
-    @media only screen and (max-width: 1500px) {
-      width: 50%;
-    }
-
-    @media only screen and (max-width: 800px) {
-      width: 70%;
-    }
-
-    @media only screen and (max-width: 580px) {
-      width: 80%;
-    }
   }
 `
 
@@ -63,5 +51,33 @@ export const ButtonDiv = styled.div`
     width: fit-content;
 
     padding: 15px;
+  }
+`
+
+export const ColorPickerDiv = styled.div`
+  .react-colorful {
+    width: 180px;
+    height: 180px;
+  }
+
+  .react-colorful__saturation {
+    border-radius: 3px;
+
+    box-shadow: none;
+  }
+
+  .react-colorful__last-control {
+    margin-top: 10px;
+    border-radius: 3px;
+  }
+
+  .react-colorful__pointer {
+    height: 25px;
+    width: 25px;
+
+    border-radius: 3px;
+    border: 1px solid var(--textColor);
+
+    box-shadow: none;
   }
 `
