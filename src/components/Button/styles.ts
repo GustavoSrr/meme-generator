@@ -15,9 +15,17 @@ export const Container = styled.button`
   transition: 0.2s;
   cursor: pointer;
 
+  svg {
+    fill: var(--buttonTextColor);
+  }
+
   &:hover {
     color: var(--textColor);
     background-color: var(--darkerColorHover);
+
+    svg {
+      fill: var(--textColor);
+    }
   }
 
   &:active {
