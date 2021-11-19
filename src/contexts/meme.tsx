@@ -6,6 +6,7 @@ type memeStateType = {
   url: string;
   topText: string;
   bottomText: string;
+  textColor: string;
 } | null
 
 type memeContextType = {
@@ -24,7 +25,8 @@ export function MemeProvider (props: memeProviderProps) {
   const [meme, setMeme] = useState<memeStateType | null>({
     url: 'https://avatars.githubusercontent.com/u/69684623?v=4',
     topText: 'Meme',
-    bottomText: 'Generator'
+    bottomText: 'Generator',
+    textColor: '#ffffff'
   })
 
   function createMeme () {
@@ -47,7 +49,7 @@ export function MemeProvider (props: memeProviderProps) {
 
         ctx.font = '25px Anton'
         ctx.textAlign = 'center'
-        ctx.fillStyle = 'white'
+        ctx.fillStyle = meme.textColor
 
         ctx.fillText(meme.topText.toUpperCase(),
           Math.round(image.width / 2),
