@@ -1,6 +1,8 @@
 import React, { useContext, useEffect } from 'react'
 import { memeContext } from '../../contexts/meme'
 
+import { Input } from '../Input'
+
 import { Container } from './styles'
 
 export const MemeImage: React.FC = () => {
@@ -12,12 +14,12 @@ export const MemeImage: React.FC = () => {
     const imageElement = document.getElementById('memeImg')
 
     imageElement!.style.width = `${image.width}px`
-    imageElement!.style.height = `${image.height}px`
   }, [0, image])
 
   return (
     <Container>
-      <img src={imageUrl} alt="img" id="memeImg"/>
+      <img src={imageUrl} alt="img" id="memeImg" draggable={false}/>
+      <Input />
     </Container>
   )
 }
