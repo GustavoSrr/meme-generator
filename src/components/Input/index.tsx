@@ -2,10 +2,13 @@ import React, { FormEvent, useContext, useState } from 'react'
 import { memeContext } from '../../contexts/meme'
 
 import { Button } from '../Button'
-import { Container } from './styles'
+
+import { FaRegSave } from 'react-icons/fa'
+import { Container, ButtonDiv } from './styles'
 
 export const Input: React.FC = () => {
-  const { meme, setMeme } = useContext(memeContext)
+  const { meme, setMeme, createMeme } = useContext(memeContext)
+  const { imageUrl } = createMeme()
 
   const [url, setUrl] = useState(meme?.url)
   const [topText, setTopText] = useState(meme?.topText)
@@ -47,7 +50,23 @@ export const Input: React.FC = () => {
           onChange={event => setBottomText(event.target.value)}
           value={bottomText}
         />
-        <Button>Enviar</Button>
+        <ButtonDiv>
+          <Button
+            type="submit"
+            id="SendButton"
+          >
+            Enviar
+          </Button>
+          <a href={imageUrl} download="meme.png">
+            <Button
+              type="button"
+              title="Baixar"
+              id="DownloadButton"
+            >
+              <FaRegSave size={15} />
+            </Button>
+          </a>
+        </ButtonDiv>
       </form>
     </Container>
   )
