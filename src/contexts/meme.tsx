@@ -19,7 +19,7 @@ export const memeContext = createContext({} as memeContextType)
 
 export function MemeProvider (props: memeProviderProps) {
   const [meme, setMeme] = useState<memeStateType | null>({
-    url: 'https://github.com/gustavosrr.png',
+    url: 'https://avatars.githubusercontent.com/u/69684623?v=4',
     topText: 'Meme',
     bottomText: 'Generator'
   })
