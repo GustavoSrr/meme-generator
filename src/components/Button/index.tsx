@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { ButtonHTMLAttributes } from 'react'
 
 import { Container } from './styles'
 
-export const Button: React.FC = ({
+export const Button: React.FC<ButtonHTMLAttributes<HTMLButtonElement>> = ({
   ...props
 }) => {
   return (
