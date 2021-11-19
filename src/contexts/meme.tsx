@@ -18,7 +18,11 @@ type memeProviderProps = {
 export const memeContext = createContext({} as memeContextType)
 
 export function MemeProvider (props: memeProviderProps) {
-  const [meme, setMeme] = useState<memeStateType | null>(null)
+  const [meme, setMeme] = useState<memeStateType | null>({
+    url: 'https://github.com/gustavosrr.png',
+    topText: 'Meme',
+    bottomText: 'Generator'
+  })
 
   return (
     <memeContext.Provider value={{ meme, setMeme }}>
