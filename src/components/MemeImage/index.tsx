@@ -3,7 +3,7 @@ import { memeContext } from '../../contexts/meme'
 
 import { Input } from '../Input'
 
-import { Container } from './styles'
+import { Container, ItemsDiv } from './styles'
 
 export const MemeImage: React.FC = () => {
   const { createMeme } = useContext(memeContext)
@@ -19,7 +19,9 @@ export const MemeImage: React.FC = () => {
   return (
     <Container>
       <img src={imageUrl} alt="img" id="memeImg" draggable={false}/>
-      <Input />
+      <ItemsDiv>
+        <Input />
+      </ItemsDiv>
     </Container>
   )
 }
