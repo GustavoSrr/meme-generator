@@ -7,8 +7,6 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
 
-  margin: 30px 0;
-
   form {
     width: 30%;
 
@@ -36,5 +34,34 @@ export const Container = styled.div`
     button {
       margin-top: 5px;
     }
+
+    @media only screen and (max-width: 1500px) {
+      width: 50%;
+    }
+
+    @media only screen and (max-width: 800px) {
+      width: 70%;
+    }
+
+    @media only screen and (max-width: 580px) {
+      width: 80%;
+    }
+  }
+`
+
+export const ButtonDiv = styled.div`
+  width: 100%;
+
+  display: flex;
+  gap: 5px;
+
+  #SendButton {
+    width: 100%;
+  }
+
+  #DownloadButton {
+    width: fit-content;
+
+    padding: 15px;
   }
 `
