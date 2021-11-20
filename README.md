@@ -6,16 +6,21 @@
 
 ## 📃 Conteúdo
 
-  1. [Como funciona?](#-como-funciona)
-  2. [Tecnologias](#-tecnologias)
-  3. [Teste o projeto](#-teste-o-projeto)
-  3. [Instalação](#-instalação)
+  1. [Como funciona](#-como-funciona)
+  2. [Ideia](#-ideia)
+  3. [Tecnologias](#-tecnologias)
+  4. [Teste o projeto](#-teste-o-projeto)
+  5. [Instalação](#-instalação)
 
 ## 🤔 Como funciona?
 
   1. A url, o texto de cima e o de baixo, que são digitados nos inputs, além da cor selecionada na roda de cores, são salvos em um State do React, que será acessado novamente por meio do context.
   2. A imagem da url é carregada via Canvas e guardada junto com a url, texto e cor.
   3. O meme aparece no dispositivo do usuário com ajuda de um Effect do React, que é disparado sempre que o objeto "meme" é alterado.
+
+## 💡 Ideia
+
+  A ideia do projeto foi retirada do repositório [app-ideas](https://github.com/florinpop17/app-ideas).
 
 ## 📡 Tecnologias
 
@@ -27,7 +32,7 @@
 
 ## 🚀 Teste o projeto
 
-  Esse projeto está hospedado na [Vercel](https://vercel.com), entre nele clicando [aqui](https://my-meme-generator.vercel.app).
+  Esse projeto está hospedado na [Vercel](https://vercel.com), veja clicando [aqui](https://my-meme-generator.vercel.app).
 
 ## ⬇ Instalação
 
